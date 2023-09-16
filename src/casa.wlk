@@ -5,9 +5,13 @@ object casaDePepeYJulian {
 	const cosas = []
 	var property cuentaBancaria= cuentaCombinada
 	
+	method dineroDisponible()= cuentaBancaria.saldo()
+	
+	method gastar(importe) {cuentaBancaria.extraer(importe)}
+	
 	method comprar(cosa){
 		cosas.add(cosa)
-		cuentaBancaria.extraer(cosa.precio())
+		self.gastar(cosa.precio())
 		}
 	
 	method cantidadDeCosasCompradas()= cosas.size()

@@ -33,14 +33,12 @@ object milanesasRebozadas {
 	method precio() { return 2600 }
 	method esComida() { return true }
 	method esElectrodomestico() { return false }	
-	// 1kg
 }
 
 object salsaDeTomates {
 	method precio() { return 900 }
 	method esComida() { return true }
 	method esElectrodomestico() { return false }	
-	// 1 botella
 }
 
 object microondas {
@@ -53,7 +51,6 @@ object cebollas {
 	method precio() { return 250 }
 	method esComida() { return true }
 	method esElectrodomestico() { return false }	
-	// 1kg
 }
 
 object dolar {
