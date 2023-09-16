@@ -1,9 +1,14 @@
 import cosas.*
+import cuentasBancarias.*
 
 object casaDePepeYJulian {
 	const cosas = []
+	var property cuentaBancaria= cuentaCombinada
 	
-	method comprar(cosa){cosas.add(cosa)}
+	method comprar(cosa){
+		cosas.add(cosa)
+		cuentaBancaria.extraer(cosa.precio())
+		}
 	
 	method cantidadDeCosasCompradas()= cosas.size()
 	
